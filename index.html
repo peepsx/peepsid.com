@@ -78,7 +78,7 @@
                             <p class="lead">
                                 A PeepsID is your digital, decentralized identity for all things on the decentralized web. The PeepsID app allows you to easily manage your PeepsIDs, while also allowing you to authenticate with apps on the decentralized web without exposing your identity to hackers or bad actors. Unlike the centralized web, on the decentralized web, you store and protect your own identities and passwords. Welcome to true privacy.
                             </p>
-                            <a class="btn btn-sm btn-primary " href="#" role="button" target="_blank">
+                            <a class="btn btn-sm btn-primary " href="#" id='os_download' role="button" target="_blank">
                                 Download PeepsID For OS </a>
 
                             <a class="btn btn-sm btn-primary" href="https://signup.peepsid.com" role="button" target="_blank">
@@ -219,7 +219,22 @@
 
     <!-- JS Plugins Init. -->
     <script>
-
+        if(navigator.platform.indexOf('Linux') !== -1) {
+            document.getElementById('os_download').innerHTML = `Download For LinuxOS`
+        } else if(navigator.platform.indexOf('Mac') !== -1) {
+            document.getElementById('os_download').innerHTML = `Download For MacOS`
+        } else if(navigator.platform.indexOf('Win') !== -1) {
+            document.getElementById('os_download').innerHTML = `Download For Windows`
+        }
+        let txt = document.getElementById('os_download');
+            if(txt.innerHTML.indexOf('Linux') !== -1) {
+                txt.href = '#'
+            } else if(txt.innerHTML.indexOf('Mac') !== -1) {
+                txt.href = '#'
+            } else  if(txt.innerHTML.indexOf('Win') !== -1) {
+                txt.href = '#'
+            }
+        
          axios.get('https://nv6khovry9.execute-api.us-east-1.amazonaws.com/dev/rsn_price_from_bts')
             .then(function (response) {
             document.getElementById('rix-price').innerHTML = `RIX Price : $ ${parseFloat(response.data.data.USD.price).toFixed(4)}`;
