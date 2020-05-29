@@ -8,6 +8,7 @@
 /*------------------------------------
   Default Styles
 ------------------------------------*/
+@import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,700;1,700&display=swap');
 
 main {
     position: relative;
@@ -29,7 +30,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-weight: 400;
+    font-weight: 700;
+    font-family: Montserrat;
 }
 
 h1>a,
@@ -45,7 +47,8 @@ h6>a,
 .h5>a,
 .h6>a {
     color: #151b26;
-    font-weight: 400;
+    font-weight: 100;
+    font-family: Montserrat;
 }
 
 h1>a:hover,
@@ -80,10 +83,10 @@ h6.text-white>a,
 
 h6,
 .h6 {
-    font-weight: 500;
+    font-weight: 700;
 }
 
-figure {
+figure {        
     margin-bottom: 0;
 }
 
@@ -409,6 +412,26 @@ button:focus {
 /*------------------------------------
   Custom Css
 ------------------------------------*/
+.custom-link-desc {
+    margin: 20px;
+    position: relative;
+    left: 22px;
+}
+.modal-header .close {
+    margin: 0;
+}
+.modal-logo {
+    margin-bottom: 20px;
+}
+.modal-logo img {
+    max-width: 59px;
+}
+h2.modal-title {
+    margin: auto;
+}
+.modal-footer button.btn.btn-primary {
+    margin: auto;
+}
 
 
 /* .display-3 {
@@ -5153,7 +5176,7 @@ button:focus {
 
 .u-media-player {
     color: #151b26;
-    font-weight: 400;
+    font-weight: 100;
     transition: all 0.2s ease-in-out;
 }
 
@@ -6160,7 +6183,7 @@ button:focus {
     min-width: 15rem;
     color: #646f79;
     text-align: center;
-    font-weight: 400;
+    font-weight: 100;
     border: none;
     border-bottom: 2px solid #e3e6f0;
     border-radius: 0;
@@ -6954,7 +6977,7 @@ button:focus {
 ------------------------------------*/
 
 .font-weight-medium {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 
@@ -7349,10 +7372,10 @@ button:focus {
     src: url("/assets/fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Alt\ Bold-webfont.woff2") format('woff2');
     src: url("/assets/fonts/Proxima-Nova-Bold.woff2") format('woff2');
     src: url("/assets/fonts/Proxima-Nova-Regular.woff2") format('woff2');
-    src: url("/assets/fonts/proximanova-light-webfont.woff2") format('woff2'); 
+    src: url("/assets/fonts/proximanova-light-webfont.woff2") format('woff2');
    
-}
-*/
+} */
+
 
 h1{
     font-family: Montserrat;
