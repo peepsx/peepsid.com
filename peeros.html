@@ -57,11 +57,24 @@
                     <!-- Logo -->
                     <div class="col-4 col-sm-2 mobile_menu">
                         <a class="navbar-brand u-header__navbar-brand" href="index.html" aria-label="Distributed Webs">
-                            <center><img class="u-header__navbar-brand-default" height="50px" src="assets/img/logos/arisen.png" alt="arisen Logo"></center>
-                            <img class="u-header__navbar-brand-mobile" width="150px" src="assets/img/logos/arisen.png" alt="arisen Logo">
+                            <center><img class="u-header__navbar-brand-default" height="80px" src="assets/img/logos/peepsLogo.png" alt="arisen Logo"></center>
+                            <img class="u-header__navbar-brand-mobile" width="150px" src="assets/img/logos/peepsLogo.png" alt="arisen Logo">
                         </a>
                     </div>
                     <!-- End Logo -->
+                    <!-- Desktop Navbar -->
+                    <ul class="col-sm-7 nav navbar-nav desktop-nav" id="myNavbar">
+                        <li class="active"><a href="https://peepsx.com/peeros.html">PeerOS</a></li>
+                        <li><a href="https://peepsid.com">PeepsID</a></li>
+                        <li><a href="https://dbrowser.com">dBrowser</a></li>
+                        <li><a href="https://peepsx.com/dwallet.html">dWallet</a></li>
+                        <li><a href="https://dsocial.network">dSocial</a></li>
+                        <li><a href="https://dsearch.network">dSearch</a></li>
+                        <li><a href="https://dnames.network">dNames</a></li>
+                        <li><a href="https://dwebx.org">dWeb</a></li>
+                        <li><a href="https://arisen.network">Developers</a></li>
+                    </ul>
+                    <!-- Desktop End Navbar -->
 
                     <!-- Button -->
                     <div class="col-8 col-sm-3 text-right mobile_menu">
@@ -86,9 +99,9 @@
             <div class="d-sm-flex align-items-sm-center height-100vh--sm">
                 <div class="container text-center space-3-top space-2-bottom space-3-bottom--lg">
                     <div class="w-lg-60 text-center mx-lg-auto content_web">
-                        <!-- Title -->
+                        <!-- Title --> 
                         <div class="mb-4">
-                            <h1 class="display-3 font-size-48--md-down font-weight-medium">The Decentralized OS</h1>
+                            <h1 class="display-3 font-size-48--md-down font-weight-medium">the decentralized OS.</h1>
                             <p class="lead">
                                 We're completely re-imagining the operating system, the file system and rethinking how people communicate with each other. That effort is bringing to life the world's first dApp store and an operating system where people can finally remove that piece of tape from their web cam. Launching January 2021.
                             </p>
@@ -132,7 +145,7 @@
     <!-- ========== FOOTER ========== -->
     <footer class="position-absolute-bottom-0--sm">
         <div class="footer_link" >
-            <ul class="navbar">
+            <!-- <ul class="navbar">
                 <li>
                 <a href="https://peepsx.network" target="_blank">Peeps</a>
                 </li>
@@ -148,14 +161,14 @@
                 <li>
                 <a href="https://dsocial.network" target="_blank">dSocial</a>
                 </li>
-                <!-- <li style="border-right: none;">
+                <li style="border-right: none;">
                 <a href="https://github.com/arisenio/arisenid-desktop/releases" target="_blank">Download ArisenID</a>
-                </li> -->
-                <!-- <li style="border-right: none;">
+                </li>
+                <li style="border-right: none;">
                 <a href="https://github.com/arisen/@arisen/" target="_blank">AirDrop</a>
-                </li> -->
+                </li>
                 
-            </ul>
+            </ul> -->
             <div class="social-icon">
                 <li>
                     <a href="https://facebook.com/peepsology" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
@@ -180,14 +193,14 @@
         <div class="container text-center space-1">
             <p class="small mb-0">&copy 2020 Peeps. All rights reserved.</p>
             <p class="powered-by small mb-0">
-                Powered by <a href="https://peepsx.com" target="_blank"><img src="assets/img/logos/arisen-icon.png" alt="peeps-logo"></a> made In <img src="assets/img/logos/american-flag.jpg" style="height: 27px; width: 50px" alt="">
+                Powered by <a href="https://peepsx.com" target="_blank"><img src="assets/img/logos/arisen-icon.png" alt="peeps-logo"></a> and Made in <img src="assets/img/logos/american-flag.jpg" style="height: 27px; width: 50px" alt="">
             </p>
         </div>
     </footer>
     <!-- ========== END FOOTER ========== -->
     <div class="u-sticky-footer">
-        <img src="assets/img/logos/arisen-icon.png" alt="dweb-logo">
-        <p>You can view this website as a dSite on the dWeb at <a href="https://peepsx.com">dweb://arisen.network</a></p>
+        <img src="assets/img/logos/dweb-logo.png" alt="dweb-logo">
+        <p>You can view this website as a dSite on the dWeb at <a href="https://peepsx.com">dweb://peepsid.com</a></p>
     </div>
 
     <!-- ========== SECONDARY CONTENTS ========== -->
@@ -285,7 +298,7 @@
         
          axios.get('https://nv6khovry9.execute-api.us-east-1.amazonaws.com/dev/rsn_price_from_bts')
             .then(function (response) {
-            document.getElementById('rix-price').innerHTML = `RIX Price : $ ${parseFloat(response.data.data.USD.price).toFixed(4)}`;
+            document.getElementById('rix-price').innerHTML = `RIX: $ ${parseFloat(response.data.data.USD.price).toFixed(4)}`;
             })
             .catch(function (error) {
                 console.log(error)

@@ -55,8 +55,8 @@
                     <!-- Logo -->
                     <div class="col-4 col-sm-2 mobile_menu">
                         <a class="navbar-brand u-header__navbar-brand" href="index.html" aria-label="Distributed Webs">
-                            <center><img class="u-header__navbar-brand-default" height="50px" src="assets/img/logos/arisen.png" alt="arisen Logo"></center>
-                            <img class="u-header__navbar-brand-mobile" width="150px" src="assets/img/logos/arisen.png" alt="arisen Logo">
+                            <center><img class="u-header__navbar-brand-default" height="80px" src="assets/img/logos/peepsLogo.png" alt="arisen Logo"></center>
+                            <img class="u-header__navbar-brand-mobile" width="150px" src="assets/img/logos/peepsLogo.png" alt="arisen Logo">
                         </a>
                     </div>
                     <!-- End Logo -->
@@ -140,7 +140,7 @@
     <!-- ========== FOOTER ========== -->
     <footer class="position-absolute-bottom-0--sm">
         <div class="footer_link" >
-            <ul class="navbar">
+            <!-- <ul class="navbar">
                 <li>
                 <a href="dwallet" target="_blank">dWallet</a>
                 </li>
@@ -156,11 +156,11 @@
                 <li>
                 <a href="https://docs.arisen.network" target="_blank">Documentation</a>
                 </li>
-                <!-- <li style="border-right: none;">
+                <li style="border-right: none;">
                 <a href="https://github.com/arisen/@arisen/" target="_blank">AirDrop</a>
-                </li> -->
+                </li>
                 
-            </ul>
+            </ul> -->
             <div class="social-icon">
                 <li>
                     <a href="https://facebook.com/peepsology" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a>
@@ -185,14 +185,14 @@
         <div class="container text-center space-1">
             <p class="small mb-0">&copy 2020 PeepsLabs. All rights reserved.</p>
             <p class="powered-by small mb-0">
-                Powered by <a href="https://peepsx.com" target="_blank"><img src="assets/img/logos/arisen-icon.png" alt="peeps-logo"></a> made In <img src="assets/img/logos/american-flag.jpg" style="height: 27px; width: 50px" alt="">
+                Powered by <a href="https://peepsx.com" target="_blank"><img src="assets/img/logos/arisen-icon.png" alt="peeps-logo"></a> and Made in <img src="assets/img/logos/american-flag.jpg" style="height: 27px; width: 50px" alt="">
             </p>
         </div>
     </footer>
     <!-- ========== END FOOTER ========== -->
     <div class="u-sticky-footer">
-        <img src="assets/img/logos/arisen-icon.png" alt="dweb-logo">
-        <p>You can view this website as a dSite on the dWeb at <a href="https://peepsx.com">dweb://arisen.network</a></p>
+        <img src="assets/img/logos/dweb-logo.png" alt="dweb-logo">
+        <p>You can view this website as a dSite on the dWeb at <a href="https://peepsx.com">dweb://peepsid.com</a></p>
     </div>
 
     <!-- ========== SECONDARY CONTENTS ========== -->
@@ -310,7 +310,7 @@
         // document.getElementById('platform_name_h1').innerHTML = `dWallet For ${navigator.platform}`
          axios.get('https://nv6khovry9.execute-api.us-east-1.amazonaws.com/dev/rsn_price_from_bts')
             .then(function (response) {
-            document.getElementById('rix-price').innerHTML = `RIX Price : $ ${parseFloat(response.data.data.USD.price).toFixed(4)}`;
+            document.getElementById('rix-price').innerHTML = `RIX: $ ${parseFloat(response.data.data.USD.price).toFixed(4)}`;
             })
             .catch(function (error) {
                 console.log(error)
